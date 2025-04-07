@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "tr">
+    <head>
+        <title>HTML Form İşlemleri</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Üye Kayıt Formu</h1>
+        <form name = "kayıt" action="kayıt.php" method="get"> <! gt görünür şekilde post görünmez şekilde ->
+            Ad Soyad: <input type="text" name="adsoyad" size="20" maxlength="30" id="adsoyadID" required>
+            <br>
+            
+            <input type="submit">
+            <input type="reset">
+        </form>
+
+        <h1>Email ve URL Kutuları</h1>
+        <form name="email" action="email.php" method="get">
+            Ad : <input name="ad" type="text" required ><br>
+            Soyad : <input name="soyad" type="text"> <br>
+            Yas : <input name="yas" type="number" required><br>
+            Email : <input name="emaik" type="email" required> <br>
+            URL : <input name="URL" type="url"> <br>
+            <input type="submit">
+            <input type="reset">
+
+        </form>
+
+        <h1>Tablo ile Hizalanmış Form Elemanları</h1>
+        <form name="tablo" action="tablo.php" method="get">
+            <table <!border="1" ->
+                <tr><td>Ad: </td><td><input name="Ad" type="text"></td></tr>
+                <tr><td>Soyad: </td><td><input name="soyad" type="text"></td></tr>
+                <tr><td>Email: </td> <td><input name="email" type="email"></td></tr>
+                <tr><td>Oneri: </td><td><textarea name="oneri" rows="3" cols="50"></textarea> </td></tr>
+                <tr><td>URL: </td> <td><input name="URL" type="url"></td></tr>
+                <tr><td></td><td><input name="submit" type="submit"><input name="reset" type="reset"></td></tr>
+            </table>
+            
+                       
+        </form>
+    </body>
+</html>
