@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>HTML Tablo Yapısı</title>
+        <meta charset="utf-8">
+        <style>
+            table, th, tr, td {
+                border: 2px solid black; 
+                border-collapse: collapse;
+                text-align: center;
+            }
+            th {
+                background-color: brown;
+            }
+            tr, td, th {
+                padding-left: 10px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-right: 20px;
+
+            }
+            tr:nth-child(even){
+                background-color: aquamarine;
+            }
+            td:nth-child(odd) {
+                background-color: cadetblue;
+            }
+
+           
+        </style>
+    </head>
+    <body style="width:100%">
+        <table >
+        <h1>HMTL Tablo Örndeği</h1>
+        <caption>Ülkeler ve Nüfusları</caption>
+        <thead>
+            <tr><th>Ülke</th><th>Nufüs</th><th>Ek</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Türkiye</td><td>85 Milyon</td><td>Ek sutun</td></tr>
+            <tr><td>Yunanistan</td><td>18 Milyon</td><td>Ek Sutun</td></tr>
+            <tr><td>Bulgaristan</td><td>24 Milyon</td><td>Ek sutub</td></tr>
+            <tr><td>Sırbistan</td><td>20 Milyon</td><td>Ek sutun</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="2">Toplam Nufüs 127 Milyon</td></tr>
+        </tfoot>
+    </table>
+    </body>
+
+</html>
