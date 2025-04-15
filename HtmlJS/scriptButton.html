@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>Script Yapısı Örneği</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Butona Baınca Script ile Yazdırma</h1>
+        <p>Butona basıldığında Hello JavaScript yazacak.</p>
+
+        <button type="button" onclick="changeFunction()" >Butona Bas!</button>
+        <p id="demo">Önce bu yazı yazıyor.</p>
+
+        <script>
+            function changeFunction() {
+                document.getElementById('demo').innerHTML = "Hello JavaScript!";
+            }
+        </script>
+
+        
+    </body>
+
+</html>
